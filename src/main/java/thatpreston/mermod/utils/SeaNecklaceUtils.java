@@ -97,9 +97,6 @@ public class SeaNecklaceUtils {
     }
     public static void giveNecklaceEffects(LivingEntity entity) {
         if(Mermod.checkTailConditions(entity)) {
-            if(Mermod.MERMOD_CONFIG.waterBreathing && !entity.hasStatusEffect(StatusEffects.WATER_BREATHING)) {
-                entity.addStatusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 200, 0, false, false));
-            }
             if(Mermod.MERMOD_CONFIG.nightVision && !entity.hasStatusEffect(StatusEffects.NIGHT_VISION)) {
                 entity.addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 200, 0, false, false));
             }
